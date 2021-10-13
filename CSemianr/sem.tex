@@ -414,7 +414,7 @@ Die unterteilung der leaves unterläuft meist nach links werden alle kleineren w
 \fett{pointlist:} { (10,3) (6,3) (11,4) (3,2) (4,8) (2,1), (4/2) } 
 \newline
 
-\begin{tikzpicture}[sibling distance=14em,
+\begin{tikzpicture}[sibling distance=14em,   
     every node/.style = {shape=rectangle, rounded corners,
       draw, align=center,
       top color=white, bottom color=blue!10}]]
@@ -441,7 +441,7 @@ Durch die abwechslung der rahmenbedingungen ist der \kd besser für die suche vo
 
 \subsection{Zusammenfassung}
 Wie bereits in den Kapiteln davor behandelt, ist es möglich die Strukturen unterschiedlich zu Implementieren. 
-Der \qt kann zum einen in gleich große Formen geteilt werden, was bei dem Image processing vom vorteil ist. Zumal wir das Bild fragmentieren wollen und dies gleichmäßig als auch die jeweiligen children nodes immer die gleiche breite und höhe haben. anderseits können die jeweiligen grenzen angepasst werden, wenn in einem Raum Punkte an einem Ort sehr angereichert sind, würde es wenig sinn machen gleichmäßig zu unterteilen. 
+Der \qt kann zum einen in gleich große Formen geteilt werden, was bei dem Image processing von Vorteil ist. Zumal wir das Bild fragmentieren wollen und dies gleichmäßig als auch die jeweiligen children nodes immer die gleiche breite und höhe haben. Anderseits können die jeweiligen Grenzen angepasst werden, wenn in einem Raum Punkte an einem Ort sehr angereichert sind, würde es wenig Sinn machen gleichmäßig zu unterteilen. 
 Dies würde nur zu große leere quadtranten führen, wodurch zum einen Speicher für die leeren Blättern verschwendet wird als auch es zu einem unausbalancierten Baum resultiert. 
 \newline
 wenn wir den Ansatz verwenden, wo wir die quadraten immer mit einer bestimmten Bedingung unterteilen, kann der speicher effizienter verwenden werden.  Somit sollte immer darauf geachtet werden, ob es sich in dem fall anbieten würde, diese Unterteilung zu benutzen.
@@ -489,30 +489,27 @@ Zum anderen kommt hinzu, dass die Implementierung vielleicht fehlerhaft ist. Die
 
 \subsection{\qt}
 
-Betrachten wir einmal die hierarchische Struktur, den \qt. Bei einer anzahl von n= 100 und n= 10000 beträgt die allgemeine Rechenzeit $log$ n. In einem worst case Szenario würde die Rechenzeit gleich der Node anzahl stehen. Dies wäre der fall wenn zum einen der Baum nicht ausbalanciert ist, bedeutet wir hätten nur einenode mit einer großen tiefe, was zu eienr linked lsit führen würde.
+Betrachten wir einmal die hierarchische Struktur des \qt. Bei einer anzahl von n= 100 und n= 10000 beträgt die allgemeine Rechenzeit $log$ n. In einem worst case Szenario würde die Rechenzeit gleich der Node anzahl stehen. Dies wäre der fall wenn zum einen der Baum nicht ausbalanciert ist, bedeutet wir hätten nur einenode mit einer großen tiefe, was zu eienr linked lsit führen würde.
 Allgemein gubt es eine formel die den Aufwand berechnet: C$_n^d$ $=$ $\frac{a}{b}$ $log$ n . \footnote[1]{Flajolet, Philippe, et al. "Analytic variations on quadtrees." Algorithmica 10.6 (1993): 473-500.}
 \newline
-
 Nun werfen wir einen Blick auf die Such funktion mit s Punkten aus D Koordinaten. 
 Q$_n^{(s,d)}$ $=$ $\theta^{(1- \frac{s}{d})}$n  \newline
-dies wäre die berechnung der Komplexität für den perfekten Baum. Jedoch wird die Baumstruktur nie perfekt sein. 
-deswegen die neue Formel, in der die Abweichung mit einbezogen wird. 
+Dies wäre die berechnung der Komplexität für den perfekten Baum. Jedoch wird die Baumstruktur nie perfekt sein. 
+Deswegen die neue Formel, in der die Abweichung mit einbezogen wird. 
 Q$_n^{(s,d)}$ $=$ $\Theta^{(1- \frac{s}{d} + \theta\frac{s}{d})}$n 
 
-die korriktur funktion $\theta(x)$ im exponenten ist die Lösung der gleichung mit $\theta \in [0,1]$ : 
+die Korrektur Funktion $\theta(x)$ im exponenten ist die Lösung der gleichung mit $\theta \in [0,1]$ : 
 $(\theta + 3 -x)^x(\theta + 2 - x)^{1-x} -2 = 0$
 
-Allgemein kann man sagen, dass die Kosten , unabhängig ob der \qt erfolgreich war oder nicht $\log n + O(n)$ ist siehe \cite[S.475ff]{quadtree} .
-
-
-das worst case dieses alogrithmuses wäre der fall, dass die anzahl aller Nodes gleich der ausführungszeit ist somit $O(n)$
+Allgemein kann gesagt, dass die Kosten , unabhängig ob der \qt erfolgreich war oder nicht eine Komplexität von $\log n + O(n)$ hat siehe \cite[S.475ff]{quadtree} .
+Das worst case dieses Alogrithmuses wäre der Fall, dass die Anzahl aller Nodes gleich der Ausführungszeit ist somit $O(n)$
 
 \subsection{\oc}
 
-Der Rechenaufwand funkgiert bei dem \oc genauso wie bei dem \qt . 
-betrachten wir die find function haben wir einen Aufwand von $O(\log2 $ N). 
+Der Rechenaufwand fungiert bei dem \oc genauso wie bei dem \qt . 
+betrachten wir die find function haben wir einen Rechenaufwand von $O(\log2 $ N). 
 
-ähnlich siht es be ider insert und der seartch funktion aus. Diese besitzen den gleichen aufwand  $O(\log2 $ N).
+ähnlich sieht es bei der insert und der search funktion aus. Diese besitzen den gleichen aufwand  $O(\log2 $ N).
 Das worst case szenario wäre hier auch $O(n)$. 
 
 WEnn wir die Raumkomplexität betrachten, und k definiert ist als die anzahl der punkte im raum, kommen wir auf die Formel: $O(k \log2 N) $ 
@@ -526,18 +523,25 @@ dem baum zu durcgsuchen pro range point dauert um die $O(\log n)$, somit ungefä
 
 \pagebreak
 
-\section{Conclusion}
-reihenfolgenabhängigkeit 
+\section{Zusammenfassung}
+In den vorherigen Kapitel habe ich bereits die Datenbaum Strukturen vorgestellt und erklärt. Ich werde diese Informationen nochmals kurz zusammenfassen und den \qt mit den \oc und \kd Strukturen vergleichen. 
+\newline    
+Was alle drei Strukturen miteinander vereint, ist die Reihenfolge der Datenmengen. Sie alle besitzen eine Root und anschließend folgen die Knoten mit den Daten. Die Root wird immer an erster Stelle stehen,da die Knoten von dieser Daten "erben". NUn gibt es natürlich Fälle wo dies nicht zutrifft, doch wir werfen hier nur einem Blick auf die vorgestellen Bäume. 
 
 unterteilungsart
+Betrachten wir nun die Art der Unterteilung der Bäume. Diese ist abhängig von der Datenmenge, welche gespeichert wird. Nehmen wir das Beispiel mit Punkten in einem Raum. Hierfür würde die Unterteilung des Raumes bei dem \qt und \oc ähnlichen erfolgen. 
+Der Unterschied ist die Dimension des Raumes. Im \qt wird ein 2D-Raum unterteilt sobald die maximale Kapazität der Punkte erreicht ist. Der \oc sit eine Weiterentwicklung des \qt und unterteilt sich, sobald auch die maximale Kapazität erreicht sein sollte, nur befinden wir uns im 3D Raum. 
+Bei dem \kd erfolgt die Unterteilung des Raumes durch das Suchen des Medium punktes und anschließend der Unterteilung der Punkte mit Berücksichtigung, dass die Achse abgewechselt wird.  \newline
+%freie bereichen
+Bei der Unterteilung der Bäume kommt es oftmals zu dem Problem, dass bei einer Dichten Anzahl von Punkten viel unteteilt wird, jedoch Räume entstehen die leer sind. Es kann zur Ausbalanciertheit kommen.
+Dieses Problem haben vorallem der \qt und der \oc. Bei dem \kd wird durch den Algorithmus den dieser benutzt, dies weitestgehen verhindert. \newline 
+%ausbalanciertheit 
+Durch das Abwechseln der Achsen und der Berücksichtigung des Medianpunktes, hat der \kd wenig Probleme mit der ungleichmäßigen Verteilung der Unterbäume jedes Knoten. Dieses Problem tritt eher bei dem \qt und \oc auf. Durch Anpassung an diese Problem mit einer Gewichtung oder Balance der knoten können aber auch diese relativ gleichmäßige Unterbäume generieren.\newline
+%speicherorte 
+Was sie alle verbindet ist die Art der Speicherung. Anhand von Pointern und \lstin{malloc()} werden speicherorte reserviert und diese angepasst. 
 
-freie bereichen
+Damit kann gesagt werden, dass der \oc viel ähnlichkeit mit dem \qt hat und sich nur im Räumlichen unterscheiden. Der \kd hingegen hat viele Unterschiede zum \qt, und ist in manchen Situationen besser geeignet. Die Suche erfolgt schneller als im \qt , doch hängt der Nutzen von dem Anwendungsbereich ab, in welchem die Struktur verwendet werden soll. 
 
-ausbalanciertheit 
-
-test
-
-speicherorte 
 
 \pagebreak
 

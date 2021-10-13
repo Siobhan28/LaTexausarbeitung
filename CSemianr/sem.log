@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.29)  13 OCT 2021 09:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.29)  13 OCT 2021 10:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -744,22 +744,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--416
  []
 
 Missing character: There is no ] in font nullfont!
-[11] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 492--495
-
- []
-
-[15] [16] [17] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.bbl) [18] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.aux) ) 
+[11] [12] [13] [14] [15] [16] [17] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.bbl) [18] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.aux) ) 
 Here is how much of TeX's memory you used:
- 23331 strings out of 478994
- 440669 string characters out of 5849632
+ 23334 strings out of 478994
+ 440711 string characters out of 5849632
  1219624 words of memory out of 5000000
- 40333 multiletter control sequences out of 15000+600000
+ 40336 multiletter control sequences out of 15000+600000
  466655 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,102p,1063b,1634s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr9.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt9.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.pdf (19 pages, 555702 bytes).
+Output written on d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.pdf (19 pages, 557911 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams
