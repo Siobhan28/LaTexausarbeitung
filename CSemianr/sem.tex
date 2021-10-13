@@ -97,8 +97,8 @@
     description={Node ist die englische Bezeichung für Knoten. Baumstrukturen bestehen aus einem Aufbau von Knoten, wo der Ursprungsknoten die Wurzel ist. Folgt nach den Knoten ein weiterer, handelt es sich um einen inneren Knoten.}}
 
 \newglossaryentry{L}{
-    name={Leave},
-    description={Leave oder auch Blatt: Äußere Knoten sind Knoten, welche keine Kinderknoten besitzen und somit das "Ende" des Baumes angeben.}}
+    name={Leaf},
+    description={Leaf oder auch Blatt: Äußere Knoten sind Knoten, welche keine Kinderknoten besitzen und somit das "Ende" des Baumes angeben.}}
 
 \newglossaryentry{CN}{
     name={ChildrenNode},
@@ -110,23 +110,23 @@
 
 \newglossaryentry{Malloc}{
     name={Malloc},
-    description={weißt spiecherblöcke zu  }}
+    description={Ist eine Speicherallokierung,genutzt um während der Programlaufzeit(dynamisch) Speicherplatz zur Verfügung zu stellen. Dies ist vor allem nützlich, wenn unbekannt ist wie viel Speicher benötigt wird. Wenn der Speicher nicht mehr genutzt wird, kann mit dem free() operator der Speicher wieder freigegeben werden.}}
 
 \newglossaryentry{rekursiv}{
     name={rekursiv},
-    description={TO DO}}
+    description={Rekursive Strukturen sind Strukturen in denen die Datenmengen gleich groß sind und durch Referencen verknüpft sind, z.b. Baumstrukturen}}
 
 \newglossaryentry{balanciert}{
     name={ausbalancierter Baum},
-    description={TO DO}}
+    description={Bei Baumstrukturen kann es vorkommen,dass sich einer der Unterbäume sehr in die Baumtiefe ausbreitet und bei Suchanfragen es zu langen Warteschlangen kommt. Um dies vorzubeugen werden ausbalancierte Strukturen generiert. Diese beugen solche Probleme vor}}
 
 \newglossaryentry{GIS}{
     name={GIS},
-    description={Geografische Informationssysteme}}
+    description={Das Geografische Informationssystem wird genutzt um Daten mit einer Karte zu verbinden und diese Positionsdaten mit beschreibenden Informationen zu versehen. }}
 
-    \newglossaryentry{Conquer}{
+    \newglossaryentry{ConquerandDivide}{
         name={Conquer and Divide},
-        description={Dieses Schema wird in ... verwendet}}
+        description={Teile und Herrsche ist ein Verfahren, was oftmals für Such- und Sortierverfahren genutzt wird. Kurz gesagt, wird ein größeres Problem in kleiner zerlegt und diese einzeln bearbeitet. Die Unterteilung erfolgt hier rekursiv. Aus den Teilegebnissen wird  anschließend ein Ergebnis konstruiert.}}
 
 %sets the style used for the listings 
 \lstset{style=ColorStyle}
@@ -153,29 +153,29 @@
 
 \section{Einführung} \label{Einführung}
 
-Mit der Weiterentwicklung von rechenfähigen Computern wurde zum einen der mögliche Speicherplatz für Daten immer größer zum andern umfangreicher. Um diese Daten besser zu sortieren und um schneller darauf zu zugreifen, wurden und werden sogenannte Datenstrukturen genutzt. Die Daten werden in bestimmten Formen gespeichert, diese Strukturen können zum Beispiel wie eine Schlange aufgebaut werden, sowie ein Graph aber auch einem Baum ähneln. 
+Mit der Weiterentwicklung von rechenfähigen Computern wurde zum einen der mögliche Speicherplatz für Daten immer größer zum andern die Datenmengen umfangreicher. Um diese Daten besser zu sortieren und um schneller darauf zugreifen zu können, wurden und werden sogenannte Datenstrukturen genutzt. Die Daten werden in bestimmten Formen gespeichert, der Aufbau dieser Strukturen kann zum Beispiel sic , sowie ein Graph aber auch einem Baum ähneln. 
 In dieser Seminarabeit werden Baumstrukturen erklärt. Aufgrund dessen, dass die Informatik sehr aufgefächert ist, sind sehr viele Spezifikationen der Bäume auf bestimmte Datenmengen entstanden.  
-Wie bereits erwähnt ermöglichen Datenstrukturen eine effiziente Suche der Daten, ich werde drei dieser Baumstrukturen vorstellen und erklären sowie betrachten, wie effizient sie in bestimmten Situationen sind. 
+Wie bereits erwähnt ermöglichen Datenstrukturen eine effiziente Suche der Daten, ich werde drei dieser Baumstrukturen vorstellen, erklären sowie betrachten, wie effizient sie in bestimmten Situationen sind. 
 \newline
-Allgemein sind Baumstrukturen wie der name schon besagt,hierarchische Daten Strukturen wo der Aufbau dem eines Baumes ähnelt. Sie besitzen eine wurzel oder auch root genannt und jeweils nodes (knoten) welche die children/ kinder von der root oder der jeweiligen parent Node sind.  In diesen Nodes können Daten gespeichert werden, dies ist aber nicht zwingend. In manchen fällen ist gewünscht nichts zu speichern.  
-In dieser Arbeit wird es um diese drei Baumstrukturen gehen:\fett \qt ,\fett \oc und \fett \kd. Diese werden für unterschiedliche Zwecke und Situationen verwenden. Zum einen um Punkte in einem 2-D raum, 3.D raum oder sogar mehr dimensionale räume darzustellen und zu speichern, als auch andere Objekte, beispielsweise Rechtecke oder Polygone.
+Allgemein sind Baumstrukturen wie der Name schon besagt,hierarchische Datenstrukturen wo der Aufbau dem eines Baumes ähnelt. Sie besitzen eine Wurzel oder auch root genannt und jeweils Nodes (knoten) welche die children/ kinder von der root oder der jeweiligen parent Node sind.  In diesen Nodes können Daten gespeichert werden, dies ist aber nicht zwingend. In manchen Fällen ist gewünscht nichts zu speichern.  
+In dieser Arbeit wird es um diese drei Baumstrukturen gehen:\fett \qt ,\fett \oc und \fett \kd. Diese werden für unterschiedliche Zwecke und Situationen verwenden. Zum einen um Punkte in einem 2-D raum, 3.D raum oder sogar in mehr dimensionale Räume darzustellen und zu speichern, als auch andere Objekte, beispielsweise Rechtecke oder Polygone.
 Diese Datenstrukturen können in vielen Berreichen eingesetzt werden und an das jeweilige Kriterium angepasst werden. Nehmen wir das Beispiel das in Deutschland um Freiberg in einem bestimmten Umkreis alle Dörfer mit weniger als 20.000 Einwohner aufgzeigt werden sollen.\newline 
-Mittels einer Baumstruktur könnte dies ermöglicht werden und anhand einer query Suche einen vordefinerierten Raum untersuchen. Auf diese Funktion werde ich in meiner Arbeit noch etwas genauer im Kaptiel \ref{QuerySuche} eingehen.\newline
+Mittels einer Baumstruktur könnte dies ermöglicht werden und anhand einer Query Suche einen vordefinerierten Raum untersuchen. Auf diese Funktion werde ich in meiner Arbeit noch etwas genauer im Kaptiel \ref{QuerySuche} eingehen.\newline
 Ich werde mich mit den Fragen beschäftigen, wodurch zeichnen sich diese Baumstrukturen von anderen aus, wie sind sie aufgebaut, welche Vorteile und Nachteile besitzen diese Bäume? 
 Desweiteren werde ich sowohl mich mit den jeweiligen Komlpexitäten der Strukturen auseinandersetzen als auch Benchmarks verwenden um die Effizienz der Baumstrukturen zu vergleichen.  
 
 \pagebreak
 \section{Baumstrukturen} \label{TreeStructures}
 
-\subsection{\qt} \label{Quadtree}
+\subsection{\fett{\qt}} \label{Quadtree}
 
 Der \qt ist ähnlich aufgebaut wie fast jede andere Baumstruktur. Er besitzt zum einen einen parent node mit jeweiligen children Nodes.
-Dieser Knoten wird auch als Wurzel oder Root bezeichet. Was ihn unterscheidet zu z.b. einem Binären baum, ist die Anzahl der nachfolgenden Knoten.
-Wie im Namen bereits vermerkt, geht nach dem Verfahren, 4 children nodes oder gar keine. Infolgedessen besitzt der \qt immer 4 childrenNodes oder gar keine. Dies hat seine Vorteile aber auch seine Nachteile, worauf ich jedoch erst später darauf eingehen werde. 
+Dieser Knoten wird auch als Wurzel oder Root bezeichet. Was ihn unterscheidet zu z.b. einem Binären Baum, ist die Anzahl der nachfolgenden Knoten.
+Wie im Namen bereits vermerkt, geht es nach dem Verfahren, 4 children nodes oder gar keine. Infolgedessen besitzt der \qt immer 4 children Nodes oder gar keine. Dies hat seine Vorteile aber auch seine Nachteile, worauf ich jedoch erst später eingehen werde. 
 \newline
-Es gibt verschiedene Arten von Quadtrees, z.b. im Point Quadtree können Punkte gespeichert werden, der Region\qt , wo Flächen unterteilt werden. dies ist sehr hilfreich in dem Themenbereich Geologie, womit für bestimmte Orte bestimmte Erze oder Schichten unterschieden werden können.
+Es gibt verschiedene Arten von Quadtrees, z.B. im Point Quadtree können Punkte gespeichert werden, der Region\qt , wo Flächen unterteilt werden. Dies ist sehr hilfreich in dem Themenbereich Geologie, womit für bestimmte Orte bestimmte Erze oder Schichten unterschieden werden können.
 Aber auch bei Image Processing findet dieser einen nutzen. Dementsprechend hängt die Struktur des \qt s von den jeweiligen Daten ab, welche gespeichert werden sollen, womit er sehr anpassbar ist.   
-Noch ein weiteres Beispiel wäre der Edge tree: dieser speichert Linien, Folglich können Bereiche bei einer Kurve so eingegrenzt werden, dass die Funktionswerte minimal sind.  
+Noch ein weiteres Beispiel wäre der Edge tree: dieser speichert Linien. Folglich können Bereiche bei einer Kurve so eingegrenzt werden, dass z.b. die Funktionswerte minimal sind.  
 \newline
 Die Unterteilung erfolgt rekursiv und im besten Fall ist der \qt ausbalanciert. 
 \newline
@@ -198,7 +198,7 @@ Der \qt kann aber auch für Image processing benutzt werden, siehe \ref{quadtree
 
 Der \qt hat einen ähnlichen Aufbau wie die binären Bäume. Was in unterscheidet ist die Anzahl der nachfolgenden Knoten, was bereits in \ref{Quadtree} erwähnt wurde.
 Was ihn weiter abgrenzt ist der Key value im Knoten, der im \qt gesplitet wird. Demzufolge besitzt der z.B. Point-\qt einen xValue und yValue. \newline
-Für diese Arbeit wurde ein Point \qt implementiert. Die anderen Ansätze haben einen ähnlichen Aufbau unterscheiden sich jedoch im Unterteilungskriterium als auch was gespeichert wird, wo neben dem punkt ein Polygon weitergegeben wird.
+Für diese Arbeit wurde ein Point \qt implementiert. Die anderen Ansätze haben einen ähnlichen Aufbau unterscheiden sich jedoch im Unterteilungskriterium als auch was gespeichert wird, wo neben dem Punkt ein Polygon weitergegeben wird.
 \newline
 Zuerst muss eine Fläche definiert werden, worin wir die Daten, in meinem Code Beispiel Punkte, einfügen und speichern. Dies erfolgt durch die struct class \lstin{struct rectangle}.
 \begin{lstlisting}
@@ -210,11 +210,11 @@ Zuerst muss eine Fläche definiert werden, worin wir die Daten, in meinem Code B
 };
 typedef struct Rectangle rectangle_t;
 \end{lstlisting}
-Wir benötigen einen Punkt, welcher sich in der Mitte des Quadranten befindet, dieser wird desweiteren zur Teilung genutzt. Zum anderen wird die Weite und Höhe definiert. 
-Was im späteren Verlauf nicht vegessen werden darf, ist die beiden Grenzen immer zu halbieren, da der Zentrumspunkt der Ursprung ist und wie im Koordinatensysten positive als auch negative werte besitzt. 
+Wir benötigen einen Punkt, welcher sich in der Mitte des Quadranten befindet, dieser wird für die Teilung genutzt. Außerdem wird die Weite und Höhe definiert. 
+Was im späteren Verlauf nicht vegessen werden darf, ist die Halbierung der beiden Grenzen, da der Zentrumspunkt der Ursprung ist und wie im Koordinatensysten positive als auch negative Werte besitzt. 
 Darauf werde ich noch etwas genauer in einem späteren Abschitt eingehen. 
 \newline
-Da ich mich für den Point \qt entschieden habe, darf die Punkte Klasse nicht fehlen. Diese besteht aus einem XValue und einem yValue. Ich habe mich für den Datentyp double entschieden, aus dem Grund das größere Zahlen errreicht werden können und als auch bei der Teilung der Quadranten Kommazahlen entstehen, wrlches durch den Datentyp \lstin{int} einfach aufgerundet wird und somit Werte verfälscht werden. 
+Da ich mich für den Point \qt entschieden habe, darf die Punkte Klasse nicht fehlen. Diese besteht aus einem XValue und einem yValue. Ich habe mich für den Datentyp double entschieden, aus dem Grund das größere Zahlen errreicht werden können und bei der Teilung der Quadranten Kommazahlen können entstehen, welches durch den Datentyp \lstin{int} einfach aufgerundet wird und somit Werte verfälscht werden. 
 Um eine gewisse Anzahl an Punkte zu erreichen wurde die Random Function \lstin{rand()} genutzt.  
  
 \begin{lstlisting}
@@ -224,10 +224,11 @@ Um eine gewisse Anzahl an Punkte zu erreichen wurde die Random Function \lstin{r
 };
 typedef struct RandomPointGenerated randPoint_t;
 \end{lstlisting}
-In der Quadtree Struktur wird eine \fett{boundary} definiert, welche vom Datentyp \lstin{rectangle_t} ist. Somit besteht die Boundary aus einem Mittelpunkt, Breite und Höhe. Zusätzlich wird ein Array initialisiert des Datentyps \lstin{randPoint_t} mit der maximalen Kapazität, welche bei erreichen der Kapazität angibt wann der Quadtree geteilt wird. 
+In der Quadtree Struktur wird eine \fett{boundary} definiert, welche vom Datentyp \lstin{rectangle_t} ist. Somit besteht die Boundary aus einem Mittelpunkt, Breite und Höhe. Zusätzlich wird ein Array initialisiert des Datentyps \lstin{randPoint_t} mit der maximalen Kapazität, welche bei erreichen dieser angibt wann der Quadtree geteilt wird. 
 Die maximale Kapazität habe ich bereits am Anfang mit \lstin{#define capacity_of_Points 2} vordefineriert. Somit wird geteilt, wenn mehr als 2 Punkte im Quadranten sind. Um bestimmen zu können wie viele Punkte im Quadranten gerade vorhanden sind, wird eine variable \lstin{n_points} initialisiert vom Datentyp \lstin{int}.
 Nun kommen wir zu einem der wichtigsten Punkte bei der Implementierung des \qt s, sprich den children Nodes oder auch inneren Knoten. \newline
-Anstatt einen Speicherplatz komplett zu reservieren, greifen wir auf Pointer zurück. Dies ermöglicht es, leichter Referencen zu generieren und ist zum anderen speicherfreundlich. Entsprechend des Aufbaues des \qt s, haben wir vier nodes. Um die position genauer bestimmen zu können werden diese nach den Himmelsrichtungen benannt, es ist aber auch möglich sie zu nummerieren. Das kann aber schnell zu Verwirrung führen. Daher habe ich mich für die andere Variante entschieden.\newline
+Anstatt einen Speicherplatz komplett zu reservieren, greifen wir auf Pointer zurück. Dies ermöglicht es, leichter Referencen zu generieren und ist zum anderen speicherfreundlich. Entsprechend des Aufbaues des \qt s, haben wir vier Nodes. Um die Position genauer bestimmen zu können, werden diese nach den Himmelsrichtungen benannt. Es ist aber auch möglich sie durch zu nummerieren, das kann aber schnell zu Verwirrung führen. 
+Daher habe ich mich für die andere Variante entschieden.\newline
 Da bei meiner Implementierung wird der \qt in gleich große Quadranten geteilt wird, und es entstehen die neuen Quadranten \nw , \noea , \sw , \se. 
 
 \begin{lstlisting}  
@@ -246,11 +247,11 @@ typedef struct QuadTree QTree_t;
 \end{lstlisting}
 
 \subsubsection{CreatingQuadtree Funktion}
-Um die Unterteilung in die jeweiligen Quadranten des \qt zu ermöglichen, müssen wir erst einmal Speicher für den parentQuadTree reservieren,was wir durch \lstin{malloc()} erreichen,welche den Speicher zuweist. 
+Um die Unterteilung in die jeweiligen Quadranten des \qt zu ermöglichen, müssen wir erst einmal Speicher für den parentQuadTree reservieren,was wir durch \lstin{malloc()} erreichen,welche den Speicherplatz so anpasst, das nur der Speicher reserviert wirf. 
 Die Werte werden auf \lstin{NULL} initialisiert, damit es im späteren Verlauf zu keinem Fehler kommt. 
 Wenn es zu einem Speicherfehler kommen sollte, wird ein Error geprinted und das Programm gestoppt. 
 Wir haben am Anfang noch keine Punkte im \qt, deswegen wird auch das array \lstin{n_points = 0;} gesetzt. 
-Somit werden alle werte mit dem startwert Null versehen und sobald ein \qt initialisiert wird, werden die jeweiligen Werte übernommen.
+Somit werden alle werte mit dem startwert Null versehen und sobald ein \qt initialisiert wird, werden die jeweiligen Werte übernommen. Normalerweise würde ein Konstruktor definiert werden, in der Programmiersprache \lstin{C} ist dies aber nicht realisierbar.
 
 \begin{lstlisting}
 
@@ -285,8 +286,8 @@ Zunächst wird die Grenze oder boundary definiert und initialisiert mit den neue
     double w = quadTree->boundary.width; 
     double h = quadTree->boundary.height;
 \end{lstlisting}
-Da ich die Random Function \lstin{rand()} nutze und nur in einem bestimmten bereich die x und y Werte liegen sollen, müssen noch die Grenzen bestimmt werden. Meine Überlegung war, dass der minimale Wert die negative hälfte der breite ist und der maximale Wert  die positive Hälfte der Breite.
-durch dies werden die Punkte immer in der Boundary liegen. 
+Da ich die Random Function \lstin{rand()} nutze und nur in einem bestimmten Bereich die x und y Werte liegen sollen, müssen noch die Grenzen bestimmt werden. Meine Überlegung war, dass der minimale Wert die negative Hälfte der Breite ist und der maximale Wert die positive Hälfte der Breite.
+Durch dies werden die Punkte immer in der Boundary liegen. 
 \begin{lstlisting}
     double min_range = -w/2; 
     double max_range = w/2; 
@@ -306,13 +307,13 @@ Damit der \qt nicht mehr weiter unterteilt wird wenn die Breite oder die Höhe n
         exit(1); 
     }
 \end{lstlisting}
-Nun kommen wir zu der \lstin{for} schleife in welcher die Unterteilung der Node erfolgt als auch der Generierung der Punkte.\newline
+Nun kommen wir zu der \lstin{for} schleife, in welcher die Unterteilung der Node erfolgt als auch der Generierung der Punkte.\newline
 Da ich den \lstin{double} Datentyp verwende und keine \lstin{int} werte als Ausgabe bekommen möchte wenn ich den modulo Operator verwende, habe ich die \lstin{fmod()} Funktion verwendet. Hiermit wird der Rest von den zwei \lstin{double} Werten zurückgegeben utner berücksichtigung der Nachkommazahlen. 
 \begin{lstlisting}
     randPoint.xValue = fmod(rand() , quadTree->boundary.width/2); 
     randPoint.yValue = fmod(rand() , quadTree->boundary.height/2); 
 \end{lstlisting}
-Da ich in der Grenze des \qt s bleiben möchte, habe ich die Werte, welche x annehmen kann auf TEST 
+Da ich in der Grenze des \qt s bleiben möchte, habe ich die Werte, welche x annehmen kann auf die Hälfte der Breite gesetzt. 
 Mithilfe einer Weiteren \lstin{if} schleife werden die Punkte abgefangen, die gleich null sind: 
 \begin{lstlisting}
     if(!(randPoint.xValue != 0 && randPoint.yValue != 0)){
@@ -384,8 +385,8 @@ Hier wird der Raum in jeweils 8 octanten unterteilt und dies solange bis keine T
     
 \end{center}
 \end{figure}
-Bei dem empty non empty \oc wird in den jeweiligen knoten leer oder nicht leer gespeichert. 
-Wenn der Knoten mit leer gekezeichnet ist, wird verdeutlicht das die datenmenge, welche in diesem octant ist, nicht verarbeitenswert ist. 
+Bei dem empty non empty \oc wird in den jeweiligen Knoten leer oder nicht leer gespeichert. 
+Wenn der Knoten mit leer gekennzeichnet ist, wird verdeutlicht das die Datenmenge, welche in diesem Octant ist, nicht weiter verabeitet werden muss. 
 sobald der knoten nicht leer ist, wird die datenmenge verarbeitet. 
 neben dem empty non empty \oc gibt es auch die variante Min max. 
 in den jeweiligen unterknoten werden jeweils die min und max werte hinterlegt somit ist eine effizientere suche gegeben. den durch die min max werte können die datenmengen schneller unterteilt werden und es nicht jeder knoten untersucht werden. 
@@ -401,7 +402,8 @@ Anhands des \oc können die benötigten tests für den ray tracing algorithm min
 Ich werde in meiner Arbeit nicht genauer auf diesen Algorithmus eingehen, allerdings kann ich diesen artikel empfehlen welcher sich damit genauer beschäftigt. \cite{RaytracingOctree}
 
 \subsection{\fett{\kd}}
-Bei dieser Datenstruktur handelt es sich um einen ausbalancierten Suchbaum. In diesem werden Punkte aus dem $\mathbb{R} ^k$ raum gespeichert. jeder Knoten stellt hier den k-dimensionalen Punkt dar. der \kd tree wird für ray tracing und nearest neighbour search benutzt.Zudem können sogenannte Point Clouds generiert werden. 
+Bei dieser Datenstruktur handelt es sich um einen ausbalancierten Suchbaum. In diesem werden Punkte aus dem $\mathbb{R} ^k$ raum gespeichert. jeder Knoten stellt hier den k-dimensionalen Punkt dar. 
+Der \kd tree wird für ray tracing und nearest neighbour search benutzt.Zudem können sogenannte Point Clouds generiert werden. 
 Die teilung in subsektionen erfolgt nach bestimmung eines Kriteriums. Bei Punkte könnte einer gewählt werden, welche sich in der Mitte des quadtranten oder rechtsecks befindet. auf der linken seite würden dann alle werte dargestellt werden, welche kleiner als der Kriteriumspunkt sind, auf der rechten alle die größer sind. außerdem wird abwechselnd das kriterium geändert. somit wenn als erstes nach dem mittelwert der x achse gesucht wurde, wird als nächstes nach dem mittelwert der y achse gesucht. somit können daten effiziernter unterteilt werden.  
 \newline
 es gibt verschiedene Arten dieser Struktur, zum einenen Homogene als auch inhomogene trees. Nebenen Punkten ist auch die speicherung von rechtecken möglich. Die speicherung der Punkte in nur den leafs/ blättern ist auch ausführbar. wie der \oc tree können uach nur min und max werte in den nodes gespeichert werden.
