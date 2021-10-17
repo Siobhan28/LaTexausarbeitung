@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.29)  13 OCT 2021 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.29)  17 OCT 2021 20:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -61,6 +61,13 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
+) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has section divisions on input line 50.
+
+
+Package tocbibind Note: Using section or other style headings.
+
 ) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 ) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/lm/lmodern.sty
@@ -618,88 +625,134 @@ Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks65
 \verbatim@line=\toks66
 \verbatim@in@stream=\read4
+) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks67
+\footnotemargin=\dimen310
+\c@pp@next@reset=\count331
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+ (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box69
 )
+\tc@llx=\dimen311
+\tc@lly=\dimen312
+\tc@urx=\dimen313
+\tc@ury=\dimen314
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen315
+\adjbox@Height=\dimen316
+\adjbox@Depth=\dimen317
+\adjbox@Totalheight=\dimen318
+\adjbox@pwidth=\dimen319
+\adjbox@pheight=\dimen320
+\adjbox@pdepth=\dimen321
+\adjbox@ptotalheight=\dimen322
+ (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count332
+) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box70
+\sift@deathcycles=\count333
+\@vwid@loff=\dimen323
+\@vwid@roff=\dimen324
+))
 \glswrite=\write4
 \glo@main@file=\write5
 \openout5 = `sem.glo'.
 
-Package glossaries Info: Writing glossary file sem.glo on input line 86.
+Package glossaries Info: Writing glossary file sem.glo on input line 92.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 135.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 141.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count331
-\l__pdf_internal_box=\box69
+\l__color_backend_stack_int=\count334
+\l__pdf_internal_box=\box71
 ) (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.aux)
 \openout1 = `sem.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-\c@lstlisting=\count332
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
+LaTeX Font Info:    ... okay on input line 141.
+\c@lstlisting=\count335
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen310
-\scratchbox=\box70
-\nofMPsegments=\count334
-\nofMParguments=\count335
-\everyMPshowfont=\toks67
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen311
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks68
+\scratchcounter=\count336
+\scratchdimen=\dimen325
+\scratchbox=\box72
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks68
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen326
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks69
 ) (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 138.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 144.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 138.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 144.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 138.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 144.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 138.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 144.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 138.
+(Font)              <12> on input line 144.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 138.
+(Font)              <8> on input line 144.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 138.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
+(Font)              <6> on input line 144.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 144.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 144.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -716,46 +769,75 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write6
 \openout6 = `sem.toc'.
 
- [1] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.gls [2]) [3] [4]
-<quadtreebildcompressionBlume.png, id=25, 478.78876pt x 473.51906pt>
+ [1]
+No file sem.gls.
+[2] [3]
+<quadtreebildcompressionBlume.png, id=22, 478.78876pt x 473.51906pt>
 File: quadtreebildcompressionBlume.png Graphic file (type png)
 <use quadtreebildcompressionBlume.png>
-Package pdftex.def Info: quadtreebildcompressionBlume.png  used on input line 188.
+Package pdftex.def Info: quadtreebildcompressionBlume.png  used on input line 194.
 (pdftex.def)             Requested size: 170.71652pt x 168.8338pt.
- [5 <d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/quadtreebildcompressionBlume.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 203.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 199.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 199.
+ [4 <d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/quadtreebildcompressionBlume.png>]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 209.
  (d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [6] [7] [8] [9] [10]
-<octree.png, id=47, 1341.01pt x 816.04875pt>
+) [5] [6] [7] [8] [9]
+<octree.png, id=46, 1341.01pt x 816.04875pt>
 File: octree.png Graphic file (type png)
 <use octree.png>
-Package pdftex.def Info: octree.png  used on input line 382.
+Package pdftex.def Info: octree.png  used on input line 388.
 (pdftex.def)             Requested size: 170.71652pt x 103.88608pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 398.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 398.
- [11 <d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/octree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 405--418
+ [10 <d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/octree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 409--422
 
  []
 
+[11]
 Missing character: There is no ] in font nullfont!
-[12] [13] [14] [15] [16] [17] [18] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.bbl) [19] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.aux) ) 
+
+Overfull \hbox (6.55923pt too wide) in paragraph at lines 434--442
+[][] \T1/lmr/m/n/10.95 In der
+ []
+
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 479--481
+
+ []
+
+[14] [15] [16]
+<unterschriftFürCseminar.png, id=80, 591.71063pt x 298.11375pt>
+File: unterschriftFürCseminar.png Graphic file (type png)
+<use unterschriftFürCseminar.png>
+Package pdftex.def Info: unterschriftFürCseminar.png  used on input line 540.
+(pdftex.def)             Requested size: 147.92729pt x 74.52824pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 540--542
+[][]
+ []
+
+[17 <d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/unterschriftFürCseminar.png>] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+[] []\T1/lmr/m/n/10.95 GitHubName: kai-wen2020.  Mo-du-le kdtree.  htt-
+ []
+
+) [18] (d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.aux) ) 
 Here is how much of TeX's memory you used:
- 23338 strings out of 478994
- 441125 string characters out of 5849632
- 1202767 words of memory out of 5000000
- 40338 multiletter control sequences out of 15000+600000
+ 24382 strings out of 478994
+ 459235 string characters out of 5849632
+ 1230691 words of memory out of 5000000
+ 41351 multiletter control sequences out of 15000+600000
  466655 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,102p,1063b,1634s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi6.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr9.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt9.pfb><d:/DownloaderProGraStuff/te/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.pdf (20 pages, 562367 bytes).
+Output written on d:/studium/4.Semester/C-Seminar/LaTexausarbeitung/CSemianr/sem.pdf (19 pages, 566602 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
+ 144 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
